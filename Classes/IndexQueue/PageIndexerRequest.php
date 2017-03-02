@@ -154,6 +154,10 @@ class PageIndexerRequest
             'http' => array(
                 'header' => implode(CRLF, $headers),
                 'timeout' => $this->timeout
+            ),
+            'ssl' => array(
+                'verify_peer'      => false,
+                'allow_self_signed'=> true
             )
         ));
 
