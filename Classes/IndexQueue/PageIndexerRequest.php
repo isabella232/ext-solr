@@ -157,7 +157,8 @@ class PageIndexerRequest
             ),
             'ssl' => array(
                 'verify_peer'      => false,
-                'allow_self_signed'=> true
+                'allow_self_signed'=> true,
+                'verify_peer_name'   => false
             )
         ));
 
